@@ -1,0 +1,266 @@
+ASSIGNMENT 02
+==========================================================
+Q2
+
+//Write a Java program to print the sum of two numbers.
+//Test Data: 74 + 36
+import java.util.Scanner;
+class quest2
+{
+	
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("give 2 numbers:");
+		int  num1=sc.nextInt();
+		int  num2=sc.nextInt();
+		System.out.println("sum is: "+(num1+num2));//if i write ("sum is: "+num1+num2) they get concatenated 7436
+												//(num1+num2+" sum  ")  output:110 sum
+		//System.out.println(name);
+	}
+}
+==========================================================
+Q3
+//Write a Java program to divide two numbers and print on the screen.
+//Test Data : 50/3
+//Expected Output : 16
+import java.util.Scanner; 
+class quest3
+{
+	
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("give the dividend:");
+		int  num1=sc.nextInt();
+		System.out.println("give the divisor:");
+		int  num2=sc.nextInt();
+		int result =num1/num2;
+		System.out.println("result is: "+result);   
+	}
+}
+
+==========================================================
+Q4
+/*Write a Java program to print the result of the following operations.
+Test Data:
+a. -5 + 8 * 6
+b. (55+9) % 9
+c. 20 + -3*5 / 8
+d. 5 + 15 / 3 * 2 - 8 % 3*/
+
+class quest4
+{
+	public static void main(String args[])
+	{
+		int a=-5 + 8 * 6;   			//43
+		int b=(55+9) % 9;				//1
+		int c=20 + -3*5 / 8; 			//19
+		int d=5 + 15 / 3 * 2 - 8 % 3;	//13    when will modulus be executed
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+	}
+}
+==========================================================
+Q5
+/*Write a Java program that takes two numbers as input and display the product of two numbers.
+Test Data:
+Input first number: 25
+Input second number: 5
+Expected Output :
+25 x 5 = 125
+*/
+import java.util.Scanner;
+class quest5
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter 1st no.:");
+		int num1=sc.nextInt();
+		System.out.print("enter 2nd no.:");
+		int num2=sc.nextInt();
+		int mul=num1*num2;
+		System.out.print(num1+" x "+num2+" = "+ mul);
+	}
+}
+
+==========================================================
+Q6
+/*
+Write a Java program to print the sum (addition), multiply,
+subtract, divide and remainder of two numbers.
+Test Data:
+Input first number: 125
+Input second number: 24
+Expected Output :
+125 + 24 = 149
+125 - 24 = 101
+125 x 24 = 3000
+125 / 24 = 5
+125 mod 24 = 5
+*/
+import java.util.Scanner;
+class quest6
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("input first no.:");
+		int num1=sc.nextInt();
+		System.out.print("input second no.:");
+		int num2=sc.nextInt();
+		System.out.println(num1+" + "+num2+" = "+(num1+num2));
+		System.out.println(num1+" - "+num2+" = "+(num1-num2));
+		System.out.println(num1+" x "+num2+" = "+(num1*num2));
+		System.out.println(num1+" / "+num2+" = "+(num1/num2));
+		System.out.println(num1+" mod "+num2+" = "+(num1%num2));
+	}
+}
+==========================================================
+Q7
+/*
+Write a Java program that takes a number as input and prints 
+its multiplication table upto 10.
+Test Data:
+Input a number: 8
+Expected Output :
+8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+...
+8 x 10 = 80
+*/
+import java.util.Scanner;
+class quest7
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter a number:");
+		int num=sc.nextInt();
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(num+" x "+i+" = "+(num*i));
+		}
+		
+		int i=1;
+		int j=1;
+		int a = i++;
+		int b = ++j;
+		System.out.println(a);   // 1
+		System.out.println(b);   // 2
+	}
+}
+
+==========================================================
+Q9
+/*
+Write a Java program to compute the specified expressions and print the output.
+Test Data:
+((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5))
+Expected Output
+2.138888888888889
+
+*/
+class quest9
+{
+	public static void main (String args[])
+	{
+		double exp=((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+		System.out.println(((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5)));
+		System.out.println(exp);
+		
+	}
+}
+==========================================================
+Q10
+/*
+Write a Java program to compute a specified formula.
+Specified Formula :
+4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
+Expected Output
+2.9760461760461765
+*/
+
+class quest10
+{
+	public static void main(String args[])
+	{
+		double exp=4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
+		System.out.println(exp);
+		System.out.println(4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));
+		
+	}
+}
+==========================================================
+Q11
+/*
+Write a Java program to print the area and perimeter of a circle.
+Test Data:
+Radius = 7.5
+Expected Output
+Perimeter is = 47.12388980384689
+Area is = 176.71458676442586
+
+*/
+import java.util.Scanner;
+class quest11
+{
+	public static void main(String args[])
+	{
+		final float pi=3.14159265358f;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter radius:");
+		double radius=sc.nextDouble();
+		double perimeter=(2*pi*radius);
+		double area=(pi*radius*radius);
+		System.out.println("Perimeter is ="+perimeter);
+		System.out.println("Area is ="+area);
+		
+	}
+	
+}
+==========================================================
+Q12
+/*
+Write a Java program that takes three numbers as 
+input to calculate and print the average of the numbers.
+*/
+import java.util.Scanner;
+class quest12
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter first num:");
+		double num1=sc.nextDouble();
+		System.out.print("Enter second num:");
+		double num2=sc.nextDouble();
+		System.out.print("Enter third num:");
+		double num3=sc.nextDouble();
+		System.out.println("average is= "+((num1+num2+num3)/3));
+		
+	}
+	
+}
+===========================================================
+Q15
+/*
+Write a Java program to swap two variables.
+*/
+
+class quest15
+{
+	public static void main(String args[])
+	{
+		int var1=15,var2=75;
+		System.out.println("before swapping var1="+var1+" var2= "+var2);
+		var1=var1+var2;
+		var2=var1-var2;
+		var1=var1-var2;
+		System.out.println("after swapping var1="+var1+" var2= "+var2);
+	}
+}
